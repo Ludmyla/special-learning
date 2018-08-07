@@ -576,5 +576,41 @@ nav {
 	.header__slider .slick-dots {
 		bottom: 15px;
 	}
+
+	.header__group {
+		flex-direction: column;
+		padding-right: 0;
+	}
+
+	.header__action li:not(:last-child) a:after {
+		display: none;
+	}
+
+
+
+	.header__action {
+		margin: 0 0 10px 0;
+		li {
+			a {
+				font-size: 14px;
+			}
+		}
+		li:first-child {
+			margin-right: 10px;
+		}
+	}
+
+	.header__social {
+		padding-left: 0;
+	}
+	
+	.header__action .cart {
+		width: 78px;
+		padding-left: 15px;
+
+		.cart-img {
+			top: 0;
+		}
+	}
 }
 /* -Responsive Styles */

@@ -13,7 +13,7 @@
 	@include transition(.2s);
 	text-transform: uppercase;
 	border: 1px solid;
-	border-radius: 30px;
+	border-radius: 50px;
 	letter-spacing: -.5px;
 }
 
@@ -65,6 +65,26 @@ $orange: #d9720e;
 
 @media(max-width:768px) {
 	.wrapper {
-	padding: 0;
+		padding: 0;
+	}
+
+
+	.btn-orange {
+		font-size: 33px;
+	}
+
+	.btn {
+		text-align: center;
+		padding: 26px 23px;
+	}
+
+	.title-orange {
+		text-align: left;
+		font-size: 33px;
+	}
+
+	.title {
+		font-size: 74px;
+		letter-spacing: -2px;
 	}
 }

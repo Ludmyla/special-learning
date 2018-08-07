@@ -74,10 +74,12 @@ header {
 
 		.cart {
 
-			img {
+			.cart-img {
 				display: inline-block;
 				width: 16px;
+				height: 13px;
 				margin-right: 6px;
+				background: url('../img/cart.svg') no-repeat center center/contain;
 			}
 
 		}
@@ -97,6 +99,14 @@ header {
 				margin-left: 10px;
 				&:hover {
 					opacity: .7;
+				}
+
+				span {
+					display: block;
+					width: 20px;
+					height: 20px;
+					background-position: center center;
+					background-repeat: no-repeat;
 				}
 			}
 		}
@@ -178,6 +188,19 @@ header {
 
 }
 
+.fb {
+	background-image: url(../img/f.png);
+}
+
+.tw {
+	background-image: url(../img/twitter.png);
+}
+.google {
+	background-image: url(../img/google.png);
+}
+.inst {
+	background-image: url(../img/instagram.png);
+}
 nav {
 	display: flex;
 	width: 100%;
@@ -352,11 +375,13 @@ nav {
 				width: 131px;
 				display: block;
 				padding-left: 32px;
-				img {
+				.cart-img {
 					position: absolute;
-					right: -2px;
-					top: 5px;
-					width: 23px;
+					right: -4px;
+					top: 4px;
+					width: 21px;
+					height: 20px;
+					background: url('../img/cart-br.svg') no-repeat center center/contain;
 				}
 			}
 		}
@@ -370,11 +395,17 @@ nav {
 					height: 46px;
 					margin-bottom: 3px;
 					border: 1px solid #a35c08;
+
+					span {
+						width: 44px;
+						height: 22px;
+						background-size: contain;
+					}
+
 				}
 			}
 		}
 	}
-
 
 	nav {
 		order: 4;
@@ -404,6 +435,7 @@ nav {
 				position: absolute;
 				top: 84px;
 				width: 429px;
+				padding: 4px 0;
 				right: 0;
 				li {
 					a {
@@ -412,14 +444,29 @@ nav {
 						font-weight: 700;
 						text-align: right;
 						margin: 0 36px 0 38px;
-						border-bottom: 2px solid #fdba3d;;
-						.action {
+						justify-content: flex-start;
+						padding: 19px 0;
+						&.action {
 							background-color: transparent;
 						}
 					}
+
+					&:not(:last-child) {
+						a {
+							border-bottom: 2px solid #fdba3d;
+
+						}
+					}
 				}
+
+
 			}
 		}
+	}
+
+	nav ul li:not(:last-child):nth-child(5) a, nav ul li:not(:last-child):nth-child(6) a {
+		margin: 0 36px 0 38px;
+		padding: 19px 0;
 	}
 
 	.header__slider__item img {
@@ -467,6 +514,21 @@ nav {
 			}
 		}
 	}
+
+	.fb {
+		background-image: url(../img/f-br.png);
+	}
+
+	.tw {
+		background-image: url(../img/twitter-br.png);
+	}
+	.google {
+		background-image: url(../img/google-br.png);
+	}
+	.inst {
+		background-image: url(../img/instagram-br.png);
+	}
+
 
 }
 

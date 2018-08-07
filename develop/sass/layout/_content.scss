@@ -174,7 +174,34 @@
 
 }
 
-@media(max-width:580px) {
+@media(max-width:680px) {
+	.title {
+		font-size: 26px;
+	}
+
+	.serve__item {
+		.title {
+			font-size: 18px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.section__description {
+		font-size: 16px;
+	}
+
+	.section__one {
+		padding: 30px 20px;
+	}
+
+	.serve__item .image {
+		height: 174px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
 }
 /* -Responsive Styles */

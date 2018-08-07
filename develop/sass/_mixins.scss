@@ -1,0 +1,19 @@
+
+/* General */
+@mixin transition($time) {
+	-webkit-transition:all $time ease-out;
+	-moz-transition:all $time ease-out;
+	transition:all $time ease-out;
+}
+
+
+/* Fonts */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+/* Fonts */
+@mixin opensans($size, $color, $style) {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:$style;
+	font-size:$size;
+	color:$color;
+}

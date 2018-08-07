@@ -1,0 +1,70 @@
+/* Styles */
+
+// inputs
+
+::-webkit-input-placeholder {opacity:1 !important; color: #999;} :-moz-placeholder {opacity:1 !important; color: #999;} ::-moz-placeholder {opacity:1 !important; color: #999;} :-ms-input-placeholder {opacity:1 !important; color: #999;}
+
+
+// buttons
+.btn {
+	border: none;
+	text-align: center;
+	padding: 13px 23px;
+	@include transition(.2s);
+	text-transform: uppercase;
+	border: 1px solid;
+	border-radius: 30px;
+	letter-spacing: -.5px;
+}
+
+.btn-orange {
+	@include opensans(16px, #feab47, 700);
+	border-color: #feab47;
+	background-color: transparent;
+	&:hover {
+		background-color: #feab47;
+		color: #fff;
+	}
+
+}
+
+// 
+
+.wrapper {
+	padding: 0 20px;
+	max-width: calc(1170px + 40px);
+	width: 100%;
+	margin: auto;
+}
+
+// colors
+
+$yellow: #fdba3d;
+$brown: #a38b77;;
+$orange: #d9720e;
+
+
+// style text
+
+.text-transform {
+	text-transform: uppercase;
+}
+
+.title-orange {
+	@include opensans(36px, $orange, 700);
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.title {
+	@include opensans(36px, #4b4b4b, 800);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+@media(max-width:768px) {
+	.wrapper {
+	padding: 0;
+	}
+}

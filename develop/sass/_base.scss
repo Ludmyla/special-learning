@@ -1,0 +1,27 @@
+/* Styles */
+
+// inputs
+
+::-webkit-input-placeholder {opacity:1 !important; color: #999;} :-moz-placeholder {opacity:1 !important; color: #999;} ::-moz-placeholder {opacity:1 !important; color: #999;} :-ms-input-placeholder {opacity:1 !important; color: #999;}
+
+
+// buttons
+.btn {
+	border: none;
+	text-align: left;
+	padding: 18px 23px;
+	@include transition(.2s);
+}
+
+// 
+
+.wrapper {
+	padding: 0 20px;
+	max-width: calc(1170px + 40px);
+	margin: auto;
+}
+
+// colors
+$yellow: #fdba3d;
+$bray: #a38b77;
+$orange: #d9720e;

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".js-header-slider").slick({dots:!0,infinite:!0,speed:500,arrows:!1,fade:!0,autoplay:!0}),$(".menu").click(function(){$(".menu__open").toggleClass("active")})});
